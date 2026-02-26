@@ -1,43 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Your Name - Portfolio</title>
-    <meta charset="UTF-8">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-        }
-        h1 { color: #333; }
-        h2 { margin-top: 30px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bobby P. Miguel Jr. | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-left: 5px solid #2a5298;
+    padding-left: 10px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #2a5298;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.contact a {
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e3c72;
+    color: white;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+}
+</style>
 </head>
+
 <body>
-<div class="container">
+
+<header>
     <h1>Your Name</h1>
-    <p>Administrative Support | HR | Operations</p>
+    <p>Administrative Support | HR Assistant | Operations</p>
+</header>
 
-    <h2>About Me</h2>
-    <p>Write a short professional summary here.</p>
+<div class="container">
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Email Management</li>
-        <li>Data Entry</li>
-        <li>HR Documentation</li>
-    </ul>
+    <div class="section">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                Detail-oriented administrative professional with experience in email management,
+                documentation processing, system updates, and HR support. 
+                Strong in organization, automation setup, and performance tracking systems.
+            </p>
+        </div>
+    </div>
 
-    <h2>Experience</h2>
-    <p>List your experience here.</p>
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">Email Management</div>
+            <div class="skill">Data Entry</div>
+            <div class="skill">HR Documentation</div>
+            <div class="skill">KPI Tracking</div>
+            <div class="skill">System Automation</div>
+            <div class="skill">Microsoft Office</div>
+            <div class="skill">Google Workspace</div>
+        </div>
+    </div>
 
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
+    <div class="section">
+        <h2>Experience</h2>
+
+        <div class="card">
+            <h3>Administrative Support</h3>
+            <p><strong>Company Name</strong> | 2023 – Present</p>
+            <ul>
+                <li>Managed internal email communications and documentation.</li>
+                <li>Updated system automations and performance tracking records.</li>
+                <li>Processed employee records and HR compliance documents.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>HR Assistant</h3>
+            <p><strong>Company Name</strong> | 2021 – 2023</p>
+            <ul>
+                <li>Handled onboarding documentation and BIR requirements.</li>
+                <li>Maintained employee performance monitoring files.</li>
+                <li>Supported payroll coordination and administrative tasks.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="section contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <p>Email: your@email.com</p>
+            <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
+            <p>Location: Baguio City, Philippines</p>
+        </div>
+    </div>
+
 </div>
+
+<footer>
+    © 2026 Your Name | Portfolio
+</footer>
+
 </body>
 </html>
